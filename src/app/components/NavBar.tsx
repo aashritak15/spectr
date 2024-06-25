@@ -5,7 +5,7 @@ import Link from 'next/link';
 import React from 'react';
 
 import { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 
 
 const NavBar: React.FC = () => {
@@ -25,7 +25,7 @@ const NavBar: React.FC = () => {
 
             <div> 
                 <Link href = "/">
-                    <span className = "text-white text-2xl font-bold"> myLogo </span>
+                    <span className = "text-white text-2xl font-bold"> Spectr </span>
                 </Link>
 
             </div>
@@ -35,12 +35,12 @@ const NavBar: React.FC = () => {
 
                 {loggedIn ? ( 
                     <Link href="/">
-                        <a className = "px-4 py-2 ml-4 text-sm font-semibold text-white bg-blue-500 rounded-md hover:bg-blue-600"> Profile </a>
+                        <span className = "px-4 py-2 ml-4 text-sm font-semibold text-white bg-blue-500 rounded-md hover:bg-blue-600"> Profile </span>
                     </Link>
                     
                 ) : (
                     <Link href="/login">
-                        <a className="px-4 py-2 ml-4 text-sm font-semibold text-white bg-green-500 rounded-md hover:bg-green-600"> Login </a>
+                        <span className="px-4 py-2 ml-4 text-sm font-semibold text-white bg-green-500 rounded-md hover:bg-green-600"> Login </span>
                     </Link>
 
                 )}
