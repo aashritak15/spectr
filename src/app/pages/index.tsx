@@ -1,17 +1,15 @@
-const HomePage = () => {
-    return (
-        <div className = "flex justify-end w-full pr-60"> 
-            <video  
-            className = "max-w-full" 
-            src = "/home.mp4" 
-            autoPlay 
-            loop 
-            muted 
-            playsInline />
-        </div>
-        
-    
-    )
-}
+"use client";
 
-export default HomePage;
+import Image from "next/image";
+import Link from "next/link"
+
+//import HomePage from "./pages/index"
+
+
+export default function Home() {
+  return (
+   <main>
+      
+    </main>
+  );
+}
